@@ -1,5 +1,3 @@
-before_install:
-- chmod +x publish-gh-pages.sh && ./publish-gh-pages.sh
 language: node_js
 node_js:
   - "12"
