@@ -12,12 +12,6 @@ script:
 - ng lint
 - ng build --prod --base-href https://t-palmer.github.io/travis-demo
 
-addons:
-  sonarcloud:
-    organization: mjiason
-    token: ${SONAR_TOKEN}
-script:
-- sonar-scanner
 
 deploy:
   provider: heroku
