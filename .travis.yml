@@ -15,14 +15,15 @@ script:
 after_script:
 - chmod +x publish-gh-pages.sh && ./publish-gh-pages.sh
 
-deploy:
-  provider: heroku
-  api_key: $HEROKU_API_KEY
-  app: angular-ci-cd-test
-
 addons:
   sonarcloud:
     organization: mjiason
     token: $SONAR_TOKEN
 script:
 - sonar-scanner
+
+deploy:
+  provider: heroku
+  api_key: $HEROKU_API_KEY
+  app: angular-ci-cd-test
+
