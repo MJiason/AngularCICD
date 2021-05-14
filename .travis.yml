@@ -17,6 +17,11 @@ script:
 addons:
   sonarcloud:
     organization: mjiason
-    token: $SONAR_TOKEN
+    token: ${SONAR_TOKEN}
 script:
 - sonar-scanner
+
+deploy:
+  provider: heroku
+  api_key: ${HEROKU_API_KEY}
+  app: angular-ci-cd-test
