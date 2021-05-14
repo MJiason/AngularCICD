@@ -1,3 +1,5 @@
+before_install:
+- chmod +x publish-gh-pages.sh && ./publish-gh-pages.sh
 language: node_js
 node_js:
   - "12"
@@ -10,10 +12,7 @@ before_script:
   - npm install -g @angular/cli
 script:
 - ng lint
-- ng build --prod --base-href https://t-palmer.github.io/travis-demo/
-
-after_script:
-- chmod +x publish-gh-pages.sh && ./publish-gh-pages.sh
+- ng build --prod --base-href https://t-palmer.github.io/travis-demo
 
 deploy:
   provider: heroku
