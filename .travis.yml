@@ -12,6 +12,7 @@ script:
 - ng lint
 - ng build --prod --base-href https://t-palmer.github.io/travis-demo
 
+
 addons:
   sonarcloud:
     organization: "mjiason"
@@ -19,7 +20,3 @@ addons:
 script:
 - sonar-scanner
 
-deploy:
-  provider: heroku
-  api_key: ${HEROKU_API_KEY}
-  app: angular-ci-cd-test
