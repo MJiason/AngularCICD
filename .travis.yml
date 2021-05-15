@@ -14,8 +14,8 @@ script:
 
 addons:
   sonarcloud:
-    organization: "mjiason"
-    token: 42369e86ac63f2520dbca9a13047c442248da1a5
+    organization: mjiason
+    token: ${SONAR_TOKEN}
 script:
 - sonar-scanner
 
