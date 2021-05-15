@@ -17,7 +17,7 @@ addons:
     organization: "mjiason"
     token: 42369e86ac63f2520dbca9a13047c442248da1a5
 script:
-- sonar-scanner -X
+- sonar-scanner 
 
 deploy:
   provider: heroku
