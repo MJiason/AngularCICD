@@ -11,7 +11,6 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "sonar": "sonar-scanner",
     "e2e": "ng e2e",
     "postinstall": "ng build --output-path angularapp  --aot --prod"
   },
